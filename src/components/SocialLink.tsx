@@ -1,6 +1,7 @@
 import { IconType } from 'react-icons';
 import { motion } from 'framer-motion';
-import { createElement } from 'react';
+import { createElement, FunctionComponent } from 'react';
+import { IconBaseProps } from 'react-icons';
 
 interface SocialLinkProps {
   href: string;
@@ -22,7 +23,7 @@ export default function SocialLink({ href, text, icon, color, delay = 0 }: Socia
       className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow duration-200 flex flex-col items-center justify-center gap-3"
     >
       <div className={color}>
-        {createElement(icon, { size: 32 })}
+        {createElement(icon as FunctionComponent<IconBaseProps>, { size: 32 })}
       </div>
       <span className="text-gray-700 font-medium">{text}</span>
     </motion.a>
