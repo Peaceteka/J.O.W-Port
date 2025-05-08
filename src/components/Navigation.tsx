@@ -73,7 +73,7 @@ export default function Navigation() {
               onClick={() => scrollToSection('connect')}
               className="bg-sky-500 text-white px-6 py-2 rounded-full hover:bg-sky-600 transition-colors font-medium"
             >
-              Let's Talk
+              Let&apos;s Talk
             </button>
           </div>
         </div>

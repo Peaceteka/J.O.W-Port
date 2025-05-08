@@ -13,7 +13,7 @@ const highlights = [
   {
     id: 1,
     imageSrc: '/images/john wanyungu 2.jpg',
-    description: 'Mr John Wanyungu addressing a health conference on community health initiatives and strategies. His expertise in public health has been instrumental in shaping community health policies.',
+    description: "Mr John Wanyungu addressing a health conference on community health initiatives and strategies. His expertise in public health has been instrumental in shaping community health policies.",
     hashtags: ['PublicHealth', 'CommunityHealth', 'HealthPolicy']
   },
   {
@@ -42,7 +42,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-sky-500 whitespace-nowrap"
           >
-            Greetings, I'm John Wanyungu
+            Greetings, I&apos;m John Wanyungu
           </motion.h1>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
