@@ -51,7 +51,7 @@ export default function Home() {
             className="text-lg md:text-xl text-gray-600 space-y-4"
           >
             <p className="mb-6 text-2xl font-medium text-gray-900">
-              I'm a dedicated public health professional with over 15 years of experience in community health systems strengthening. community health systems.
+              I&apos;m a dedicated public health professional with over 15 years of experience in community health systems strengthening.
             </p>
             <div className="text-center">
               <p className="font-semibold mb-3 italic font-serif text-lg">He has expertise in the following fields:</p>
@@ -60,7 +60,7 @@ export default function Home() {
                   'Project Management',
                   'Grants Management',
                   'Strategic Information Management',
-                  "Let's Talkity Management",
+                  "Quality Management",
                   'Health Systems Management'
                 ].map((skill, index) => (
                   <motion.li
