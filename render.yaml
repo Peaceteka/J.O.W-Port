@@ -1,5 +1,0 @@
-services:
-  - type: static
-    name: john-wanyungu
-    buildCommand: npm install && npm run build
-    publishDirectory: out
