@@ -85,21 +85,25 @@ export default function HighlightsCarousel({ highlights }: HighlightsCarouselPro
             className="absolute w-full"
           >
             <div className="relative h-[500px] w-full">
-              <Image
-                src={highlights[currentIndex].imageSrc}
-                alt={highlights[currentIndex].description}
-                fill
-                style={{ objectFit: 'cover' }}
-                className="rounded-lg"
-                priority
-              />
+              {highlights[currentIndex] && (
+                <Image
+                  src={highlights[currentIndex].imageSrc}
+                  alt={highlights[currentIndex].description}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                  className="rounded-lg"
+                  priority
+                />
+              )}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-8 rounded-b-lg">
+                {highlights[currentIndex] && (
                 <p className="text-white text-lg md:text-xl mb-4">
                   {highlights[currentIndex].description}
                 </p>
-                {highlights[currentIndex].hashtags && (
+              )}
+                {highlights[currentIndex]?.hashtags && (
                   <div className="flex flex-wrap gap-2">
-                    {highlights[currentIndex].hashtags.map((tag, index) => (
+                    {highlights[currentIndex]?.hashtags?.map((tag, index) => (
                       <span
                         key={index}
                         className="text-blue-400 text-sm font-medium hover:text-blue-300"
