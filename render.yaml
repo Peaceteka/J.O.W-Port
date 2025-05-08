@@ -1,8 +1,11 @@
 services:
-  - type: static
+  - type: web
     name: john-wanyungu
+    env: node
     buildCommand: npm install && npm run build
-    publishDirectory: out
+    startCommand: npm start
     envVars:
       - key: NODE_ENV
         value: production
+      - key: PORT
+        value: 3000
