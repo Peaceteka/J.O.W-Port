@@ -42,7 +42,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}
             className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 text-sky-500 whitespace-nowrap"
           >
-            Greetings, I'm John Wanyungu
+            Greetings, I&apos;m John Wanyungu
           </motion.h1>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -51,7 +51,7 @@ export default function Home() {
             className="text-lg md:text-xl text-gray-600 space-y-4"
           >
             <p className="mb-6 text-2xl font-medium text-gray-900">
-              A Kenyan public health leader and researcher with over two decades of experience in strengthening community health systems.
+              I'm a dedicated public health professional with over 15 years of experience in community health systems strengthening. community health systems.
             </p>
             <div className="text-center">
               <p className="font-semibold mb-3 italic font-serif text-lg">He has expertise in the following fields:</p>
@@ -60,7 +60,7 @@ export default function Home() {
                   'Project Management',
                   'Grants Management',
                   'Strategic Information Management',
-                  'Quality Management',
+                  "Let's Talkity Management",
                   'Health Systems Management'
                 ].map((skill, index) => (
                   <motion.li
