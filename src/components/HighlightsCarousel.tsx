@@ -97,9 +97,9 @@ export default function HighlightsCarousel({ highlights }: HighlightsCarouselPro
                 <p className="text-white text-lg md:text-xl mb-4">
                   {highlights[currentIndex].description}
                 </p>
-                {highlights[currentIndex].hashtags && (
+                {highlights[currentIndex]?.hashtags && (
                   <div className="flex flex-wrap gap-2">
-                    {highlights[currentIndex].hashtags.map((tag, index) => (
+                    {highlights[currentIndex]?.hashtags?.map((tag, index) => (
                       <span
                         key={index}
                         className="text-blue-400 text-sm font-medium hover:text-blue-300"
