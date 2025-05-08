@@ -16,6 +16,24 @@
     background: #ffffff;
     color: #171717;
   }
+  h1 {
+    @apply text-4xl font-bold mb-6;
+  }
+  h2 {
+    @apply text-3xl font-semibold mb-4 mt-8;
+  }
+  h3 {
+    @apply text-2xl font-medium mb-3 mt-6;
+  }
+  p {
+    @apply mb-4 text-gray-700;
+  }
+  ul {
+    @apply mb-4 list-disc list-inside;
+  }
+  li {
+    @apply mb-2 text-gray-700;
+  }
 }
 
 @layer components {
@@ -27,7 +45,7 @@
   }
 
   .btn {
-    @apply px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors;
+    @apply inline-block px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors;
     display: inline-block;
     padding: 0.5rem 1rem;
     background: #0070f3;
@@ -35,6 +53,10 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+  }
+
+  .social-link {
+    @apply text-blue-600 hover:text-blue-800 underline;
   }
 }
 
