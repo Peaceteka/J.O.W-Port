@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import { IconType } from 'react-icons';
 import { FaLinkedin, FaTwitter, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 import { FaResearchgate } from 'react-icons/fa6';
 import SocialLink from '../components/SocialLink';
@@ -249,31 +250,36 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 max-w-5xl mx-auto">
             <SocialLink
               href="https://www.linkedin.com/in/john-wanyungu-749606124/"
-              icon={<FaLinkedin className="text-4xl text-blue-600" />}
+              icon={FaLinkedin}
+              color="text-blue-600"
               text="LinkedIn"
               delay={0.1}
             />
             <SocialLink
               href="https://twitter.com"
-              icon={<FaTwitter className="text-4xl text-blue-400" />}
+              icon={FaTwitter}
+              color="text-blue-400"
               text="Twitter"
               delay={0.2}
             />
             <SocialLink
               href="https://www.researchgate.net/scientific-contributions/John-Wanyungu-81424825"
-              icon={<FaResearchgate className="text-4xl text-blue-800" />}
+              icon={FaResearchgate}
+              color="text-blue-800"
               text="ResearchGate"
               delay={0.3}
             />
             <SocialLink
               href="mailto:jwangungu@gmail.com"
-              icon={<FaEnvelope className="text-4xl text-red-500" />}
+              icon={FaEnvelope}
+              color="text-red-500"
               text="Email"
               delay={0.4}
             />
             <SocialLink
               href="https://wa.me/254728250712"
-              icon={<FaWhatsapp className="text-4xl text-green-500" />}
+              icon={FaWhatsapp}
+              color="text-green-500"
               text="WhatsApp"
               delay={0.5}
             />
